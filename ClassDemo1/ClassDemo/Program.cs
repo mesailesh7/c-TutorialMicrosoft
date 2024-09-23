@@ -2,12 +2,18 @@
 
 class Staff
 {
-    //This is known as access modifier
+    #region Fields
+//This is known as access modifier
     private string nameOfStaff;
     private const int hourlyRate = 30;
     private int hWorked;
+    
+
+    #endregion
+    
 
 
+    #region Properties
     public int HoursWorked
     {
         get => hWorked;
@@ -22,6 +28,10 @@ class Staff
         }
     }
 
+    #endregion
+
+    
+    #region Methods
     public void PrintMessage()
     {
         Console.WriteLine("Calculating Pay");
@@ -53,18 +63,62 @@ class Staff
         }
             
     }
+    
 
+    
     public override string ToString()
     {
         return $"Name of Staff = {nameOfStaff}, hourlyRate = {hourlyRate}, hWorked = {hWorked}";
     }
+
+    #endregion
     
+    
+    #region Constructors
+    public Staff(string name)
+    {
+        nameOfStaff = name;
+        Console.WriteLine("\n" + nameOfStaff);
+        Console.WriteLine("---------------------------");
+    }
+
+    public Staff(string firstName, string lastName)
+    {
+        nameOfStaff = $"{firstName} {lastName}" ;
+        Console.WriteLine("\n" + nameOfStaff);
+        Console.WriteLine("---------------------------");
+        
+    }
+    
+    #endregion
 }
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        // The syntax for instantiating an object is
+        //     ClassName objectName = new ClassName(arguments);
+
+        int pay;
+        
+        Staff Staff1 = new Staff("John");
+        Staff1.HoursWorked = 160;
+        pay = Staff1.CalculatePay(1000, 400);
+        Console.WriteLine("Pay = {0}",pay);
+         
+        Staff Staff2 = new Staff("Jane","Lee");
+        Staff2.HoursWorked = 160;
+        pay = Staff2.CalculatePay();
+        Console.WriteLine("Pay = {0}",pay);
+        
+        
+        Staff Staff3 = new Staff("Carol", "Lee");
+        Staff3.HoursWorked = -4000;
+        pay = Staff3.CalculatePay();
+        Console.WriteLine("Pay = {0}",pay);
+        
     }
+
+    
 }
