@@ -7,4 +7,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\PokemonRPG.BattleSystem\PokemonRPG.BattleSystem.csproj" />
+      <ProjectReference Include="..\PokemonRPG.Models\PokemonRPG.Models.csproj" />
+    </ItemGroup>
+
 </Project>

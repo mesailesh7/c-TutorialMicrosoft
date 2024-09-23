@@ -1,4 +1,4 @@
-namespace PokemonRPG.Models;
+namespace PokemonRPG.Models.Players;
 
 public abstract class BasePlayer
 {

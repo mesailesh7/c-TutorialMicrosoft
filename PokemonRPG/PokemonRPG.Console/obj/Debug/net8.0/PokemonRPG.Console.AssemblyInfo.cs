@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PokemonRPG.Console")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e77d336e34485237053d98c646cb346aeb8483f5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5548bfe608342bb3e2d430e3ea75acf5d3c35a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("PokemonRPG.Console")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PokemonRPG.Console")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
